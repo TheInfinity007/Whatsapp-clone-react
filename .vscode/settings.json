@@ -1,0 +1,24 @@
+{
+    "window.zoomLevel": 1,
+    "files.autoSave": "afterDelay",
+    "workbench.editor.enablePreview": false,
+    "editor.wordWrap": "on",
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+
+    // auto save configs
+    "editor.formatOnSave": true,
+    "[javascript]": {
+        "editor.formatOnSave": false
+    },
+    "[javascriptreact]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    // tell the ESLint plugin to run on save
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    }
+}
