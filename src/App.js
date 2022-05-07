@@ -1,15 +1,16 @@
 import './App.css';
+import Sidebar from './Sidebar';
+import Chat from './Chat'
 
 function App() {
     return (
         // BEM naming convention
-        <div className="App">
-            <h1> Hello Infinitiy </h1>
+        <div className="app">
+            <div className="app__body">
+                <Sidebar />
+                <Chat />
+            </div>
         </div>
-        // <div className="app__body">
-        //     {/* sidebar */}
-        //     {/* chat */}
-        // </div>
     );
 }
 
