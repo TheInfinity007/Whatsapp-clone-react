@@ -2,7 +2,7 @@ import { Avatar } from '@mui/material';
 import React, { useEffect, useState } from 'react';
 import './SidebarChat.css';
 
-function SidebarChat({ addNewChat }) {
+function SidebarChat({ id, name, addNewChat }) {
     const [seed, setSeed] = useState('');
 
     useEffect(() => {
@@ -14,6 +14,7 @@ function SidebarChat({ addNewChat }) {
 
         if (roomName) {
             // do some clever database stuff...
+            console.log('new chat created with name', roomName);
         }
     };
 
@@ -23,7 +24,7 @@ function SidebarChat({ addNewChat }) {
                 src={`https://avatars.dicebear.com/api/human/${seed}.svg`}
             />
             <div className="sidebarChat__info">
-                <h2>Room name</h2>
+                <h2>{name}</h2>
                 <p>Last message...</p>
             </div>
         </div>
